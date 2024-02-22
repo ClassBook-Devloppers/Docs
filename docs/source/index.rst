@@ -10,7 +10,7 @@ how to :ref:`installation` the project.
 
 .. note::
 
-  Ce projet est actuellement en développement pour y participer rejoignez [https://github.com/ClassBook-Devloppers/](ClassBook)
+  Ce projet est actuellement en développement pour y participer rejoignez (https://github.com/ClassBook-Devloppers/)[Github Officiel de ClassBook]
 
 Table des matières : 
 --------
