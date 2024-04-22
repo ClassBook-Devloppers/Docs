@@ -17,5 +17,5 @@ Table des matières :
 
 .. toctree::
 
-   Classbook Installation
+  Installation
    
