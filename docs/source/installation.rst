@@ -1,5 +1,5 @@
 =====
-Usage
+Installation
 =====
 
 ClassBook à forcément besoin d'un 2ème disque dur pour stocker les fichiers utilisateurs, les datas, ...
