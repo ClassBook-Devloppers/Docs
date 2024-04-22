@@ -17,6 +17,5 @@ Table des matières :
 
 .. toctree::
 
-   usage
-   api
+   how to install
    
