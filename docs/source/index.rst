@@ -9,7 +9,7 @@ Regardez le dodument :doc:`installation` pour découvrir comment installer Class
 
 .. note::
 
-  Ce projet est actuellement en développement pour y participer rejoignez 'Github Officiel de ClassBook<https://github.com/ClassBook-Devloppers/>'_
+  Ce projet est actuellement en développement pour y participer rejoignez`Github Officiel de ClassBook <https://github.com/ClassBook-Devloppers/>`_
 
 Table des matières : 
 --------
