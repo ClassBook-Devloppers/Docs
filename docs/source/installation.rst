@@ -14,14 +14,15 @@ Installation Facile
 .. code-block:: console
 
    $ wget https://raw.githubusercontent.com/classbook-devloppers/linux-server/main/preinstall.sh
-  
-  et ensuite venir faire un
+
+
+et ensuite venir faire un
   
 .. code-block:: console
   
   $ sudo chmod 313 preinstall.sh
   
- et 
+et 
   
 .. code-block:: console
   
