@@ -46,6 +46,7 @@ Pour installer Classbook en Ligne de Commande nous aurons besoin de :
 - Samba
 - PHP
 - Parted
+- NPM
 
 1ère Partie : Installations des Paquets
 ------------
@@ -60,11 +61,11 @@ Effectuer les mises à jour du serveur avec
                                                                      
   $ sudo apt update -y
 
-et installer les services Nginx, MariaDB, SSH, Samba, PHP et Git avec cette commande :
+et installer les services Nginx, MariaDB, SSH, Samba, PHP, Git, Parted et NPM avec cette commande :
                                                                      
 .. code-block:: console
                                                                      
- $ sudo apt install nginx mariadb-server openssh-server samba parted git php -y
+ $ sudo apt install nginx mariadb-server openssh-server samba parted git php npm -y
 
 vous pourrez verifier si voutre serveur web est fonctionnel en entrant son IP ( si vous ne savez pas vous pouvez utiliser la commande 
 
@@ -199,6 +200,36 @@ Et activer le site avec cette commande :
 .. code-block:: console
 
     $ ln -s /etc/nginx/sites-available/classbook /etc/nginx/sites-enabled/
+
+Une fois ça fait, il faut rajouter les pages d'erreurs avec cette commande dans :
+
+.. code-block:: console
+
+ $ sudo nano /etc/nginx/sites-available/default
+
+et dans nano, ajouter ce morceau de code : 
+
+.. code-block::
+
+ server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    root /classbook/web;
+    index index.html index.htm;
+
+    server_name _;
+
+    error_page 400 /errors/400.html;
+    error_page 403 /errors/403.html;
+    error_page 404 /errors/404.html;
+    error_page 500 /errors/500.html;
+    error_page 503 /errors/503.html;
+
+    location / {
+        try_files \$uri \$uri/ =404;
+    }
+}
 
 > Partie 2 : Configuration de Samba
 
