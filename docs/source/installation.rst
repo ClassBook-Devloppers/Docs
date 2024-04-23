@@ -30,7 +30,7 @@ et
 
 .. note::
 
-  Pour pouvoir utiliser classbook, il faut que le serveur soit sous (https://releases.ubuntu.com/jammy/)[Ubuntu Server 22.04], (https://www.debian.org/releases/buster/)[Debian 10] ou (https://learn.microsoft.com/fr-fr/windows/wsl/install/)[WSL]
+  Pour pouvoir utiliser classbook, il faut que le serveur soit sous Ubuntu Server 22.04, Debian 10 ou WSL
 
 Installer ClassBook en Ligne de Commande
 ========================================
