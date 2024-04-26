@@ -73,7 +73,7 @@ vous pourrez verifier si voutre serveur web est fonctionnel en entrant son IP ( 
  
  $ ip address
 
-la carte réseau devrait commençer par : "ens" ou "enp"                                                               
+la carte réseau devrait commençer par : "ens" ou "enp"   
                                                                                
 2ème Partie : Configuration des Applications
 ------------
@@ -290,6 +290,16 @@ puis faire :
 .. code-block:: console
 
     $ git clone https://github.com/classbook-devloppers/source-code.git
+
+Et installer les packages de NPM avec ces commandes :
+
+.. code-block:: console
+
+ $ npm install --global npm@latest
+
+.. code-block:: console
+
+ $ npm install --global gulp-cli
 
 3ème Partie : Post-Installation
 ------------
